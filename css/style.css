@@ -11,6 +11,33 @@ body
     font-family: 'Rubik Mono One', sans-serif;
     text-align: center;
 }
+/*  nav-bar numerica----------------------- */
+
+nav > ul{
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+}
+
+ul > li
+{
+    display: inline-block;
+    line-height: 10px;
+    list-style: none;
+    margin: 10px;
+}
+
+li > a
+{
+    text-decoration: none;
+    background-color: rgb(247, 248, 247);
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
 
 /* proprietà comuni---------------------------------------------- */
 .shoes
@@ -27,7 +54,7 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+/* esclusione del mio id color_unix con selettore :not */
 .shoes_img > h2:not(last-child)
 {
     text-transform: uppercase;
@@ -36,7 +63,7 @@ body
 }
 #color_unix{color: green;}
 
-/* proprietà specifiche ---------------------------------- */
+/* proprietà specifiche per gli sfondi-------------------------- */
 .red{ background-color: red;}
 .green{background-color: green;}
 .yellow{background-color: yellow;}
